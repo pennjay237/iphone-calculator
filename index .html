@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles/style .css ">
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="screen" id="screen">0</div>
+        <div class="buttons">
+            <button class="btn gray" onclick="clearScreen()">AC</button>
+            <button class="btn gray" onclick="negate()">+/-</button>
+            <button class="btn gray" onclick="percent()">%</button>
+            <button class="btn orange" onclick="inputOperator('/')">÷</button>
+            
+            <button class="btn" onclick="inputDigit(7)">7</button>
+            <button class="btn" onclick="inputDigit(8)">8</button>
+            <button class="btn" onclick="inputDigit(9)">9</button>
+            <button class="btn orange" onclick="inputOperator('*')">×</button>
+            
+            <button class="btn" onclick="inputDigit(4)">4</button>
+            <button class="btn" onclick="inputDigit(5)">5</button>
+            <button class="btn" onclick="inputDigit(6)">6</button>
+            <button class="btn orange" onclick="inputOperator('-')">−</button>
+            
+            <button class="btn" onclick="inputDigit(1)">1</button>
+            <button class="btn" onclick="inputDigit(2)">2</button>
+            <button class="btn" onclick="inputDigit(3)">3</button>
+            <button class="btn orange" onclick="inputOperator('+')">+</button>
+            
+            <button class="btn wide" onclick="inputDigit(0)">0</button>
+            <button class="btn" onclick="inputDecimal()">.</button>
+            <button class="btn orange" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="./sccript/script.js"></script>
+</body>
+</html>
